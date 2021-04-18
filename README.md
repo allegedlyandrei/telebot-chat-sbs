@@ -9,7 +9,19 @@ This simpel [FSM](https://en.wikipedia.org/wiki/Finite-state_machine) based tele
 
 Supports parallel processing w/o using database. Unique temporary file is creating for each new telegram bot user to store state machine's conditions and to gather replys. So there will be no mess if many users use the bot at the same time.
 
+Chat example:
+
 ![](https://github.com/allegedlyandrei/telebot-chat-sbs/blob/main/chat-example.png)
+
+Report example:
+
+```bash
+Answer 1
+Answer 2
+Answer 3
+Answer 4
+```
+(1234567rep-example)
 
 # Code highlights
 
