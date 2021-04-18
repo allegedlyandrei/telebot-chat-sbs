@@ -113,3 +113,4 @@ func main() {
 ```
 
 That's it. This is my very first golang project and I hope it might be useful for somebody.
+Feel free to contact via telegram @allegedlyandrei
