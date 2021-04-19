@@ -1,4 +1,4 @@
-# Golang Telegram multisession chat bot to fire one question after another.
+# Golang Telegram Multisession Chatbot to Fire One Question After Another.
 
 Made with [Telebot](https://github.com/tucnak/telebot) framework:
 ```bash
