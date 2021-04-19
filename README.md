@@ -7,7 +7,7 @@ go get -u gopkg.in/tucnak/telebot.v2
 
 # Overview
 
-This simple golang [FSM](https://en.wikipedia.org/wiki/Finite-state_machine)-based telegram demo bot provides step-by-step Q&A's communication. After every question, the bot waits for an answer and then fires the next question.
+This simple golang [FSM](https://en.wikipedia.org/wiki/Finite-state_machine)-based telegram demo bot provides step-by-step Q&A communication. After every question, the bot waits for an answer and then fires the next question.
 
 It supports parallel processing w/o using the database. A unique temporary file is created for each new telegram bot user to store the state machine's conditions and to gather replies. So there will be no mess if many users use the bot at the same time.
 
