@@ -39,11 +39,11 @@ var (
 
 //infile is the function to be used as the state machine
 //unique temporary file will be created for each user to store the current state machine condition
-func infile(name, what string) bool {
+func infile(fname, state string) bool {
 
-	cont, _ := ioutil.ReadFile(name)
+	cont, _ := ioutil.ReadFile(fname)
 
-	if strings.Contains(string(cont), what) {
+	if strings.Contains(string(cont), state) {
 
 		return true
 
