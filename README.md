@@ -87,7 +87,9 @@ func main() {
 			rep, _ = os.Create(strconv.Itoa(m.Sender.ID) + "rep")
 
 			rep.Close()
+			
 		} else if infile(strconv.Itoa(m.Sender.ID), "q2") && m.Text != a1 {
+		
 			b.Send(m.Sender, "Question 2")
 
 			f, _ = os.Create(strconv.Itoa(m.Sender.ID))
