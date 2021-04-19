@@ -7,7 +7,7 @@ go get -u gopkg.in/tucnak/telebot.v2
 
 This simpel golang [FSM](https://en.wikipedia.org/wiki/Finite-state_machine)-based telegram demo bot provides step-by-step Q&A's communication. After every question, bot waits for an answer and then fires the next question.
 
-Supports parallel processing w/o using database. Unique temporary file is creating for each new telegram bot user to store state machine's conditions and to gather replys. So there will be no mess if many users use the bot at the same time.
+Supports parallel processing w/o using database. Unique temporary file is creating for each new telegram bot user to store state machine's conditions and to gather replies. So there will be no mess if many users use the bot at the same time.
 
 
 Chat example:
@@ -113,5 +113,3 @@ func main() {
 ```
 
 That's it. This is my very first golang project and I hope it might be useful for somebody.
-
-Feel free to contact via telegram @allegedlyandrei
