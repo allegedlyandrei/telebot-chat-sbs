@@ -5,9 +5,9 @@ go get -u gopkg.in/tucnak/telebot.v2
 
 # Overview
 
-This simpel golang [FSM](https://en.wikipedia.org/wiki/Finite-state_machine)-based telegram demo bot provides step-by-step Q&A's communication. After every question, bot waits for an answer and then fires the next question.
+This simple golang [FSM](https://en.wikipedia.org/wiki/Finite-state_machine)-based telegram demo bot provides step-by-step Q&A's communication. After every question, the bot waits for an answer and then fires the next question.
 
-Supports parallel processing w/o using database. Unique temporary file is creating for each new telegram bot user to store state machine's conditions and to gather replies. So there will be no mess if many users use the bot at the same time.
+It supports parallel processing w/o using the database. A unique temporary file is created for each new telegram bot user to store the state machine's conditions and to gather replies. So there will be no mess if many users use the bot at the same time.
 
 
 Chat example:
@@ -37,7 +37,7 @@ var (
 	inner, inrep int
 )
 
-//infile is the function to be used as state machine
+//infile is the function to be used as the state machine
 //unique temporary file will be created for each user to store the current state machine condition
 func infile(name, what string) bool {
 
@@ -75,7 +75,7 @@ func main() {
 
 			b.Send(m.Sender, "Question 1")
 
-			//the name of the file is same as user's telegram id
+			//the name of the file is same as the user's telegram id
 			f, _ = os.Create(strconv.Itoa(m.Sender.ID))
 			inner, _ = f.WriteString("q2")
 
@@ -83,7 +83,7 @@ func main() {
 
 			f.Close()
 
-			//the name of the report file is same as user's telegram id with "rep" suffix
+			//the name of the report file is same as the user's telegram id with "rep" suffix
 			rep, _ = os.Create(strconv.Itoa(m.Sender.ID) + "rep")
 
 			rep.Close()
