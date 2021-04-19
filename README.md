@@ -1,3 +1,5 @@
+#Golang Telegram multisession chat bot to fire one question after another.
+
 Made with [Telebot](https://github.com/tucnak/telebot) framework:
 ```bash
 go get -u gopkg.in/tucnak/telebot.v2
